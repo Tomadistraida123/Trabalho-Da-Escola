@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #333333;
+    background: #fdfdfd;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção esquerda */
+.left_side {
+    width: 35%;
+    background-color: #3b2d38;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left_side .profile_text h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #1abc9c;
+}
+
+.left_side .contact_info,
+.left_side .education,
+.left_side .language {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.left_side .title {
+    font-size: 1.2em;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.left_side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left_side ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left_side ul li .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.left_side ul li .text {
+    font-size: 0.9em;
+}
+
+/* Seção direita */
+.right_side {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.right_side .about {
+    margin-bottom: 20px;
+}
+
+.right_side .title2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.right_side .box {
+    margin-bottom: 20px;
+}
+
+.right_side .box .year_company h5 {
+    color: #7f8c8d;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.right_side .box .text h4 {
+    font-size: 1.1em;
+    color: #e3e3d1;
+}
+
+.right_side .skills .box h4 {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #3498db;
+}
+
+.right_side .skills .percent {
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.right_side .skills .percent div {
+    height: 100%;
+    background: #3498db;
+    border-radius: 5px;
+}
+
+/* Interatividade */
+h2, h3, h4, h5, p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover, h3:hover, h4:hover, h5:hover {
+    color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left_side, .right_side {
+        width: 100%;
+    }
+
+    .left_side {
+        text-align: center;
+    }
+}
